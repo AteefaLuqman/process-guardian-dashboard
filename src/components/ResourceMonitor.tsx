@@ -3,7 +3,7 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { SystemResources } from '@/lib/mockData';
-import { Cpu, Memory, HardDrive, Network } from 'lucide-react';
+import { Cpu, Database, HardDrive, Network } from 'lucide-react';
 
 interface ResourceMonitorProps {
   resources: SystemResources;
@@ -63,7 +63,7 @@ const ResourceMonitor: React.FC<ResourceMonitorProps> = ({ resources }) => {
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center">
             <div className="p-2 rounded-md bg-primary/10 mr-2">
-              <Memory className="h-5 w-5 text-primary" />
+              <Database className="h-5 w-5 text-primary" />
             </div>
             <h3 className="font-medium">Memory</h3>
           </div>
